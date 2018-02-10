@@ -21,6 +21,7 @@
 
     .waterfall img {
       width: 100px;
+      /* width: 100%; */
       margin: 10px;
       position: absolute;
       transition: all .4s;
@@ -30,73 +31,37 @@
 
 <body>
   <div class="waterfall">
-    <img src="http://via.placeholder.com/100x100" alt="300*100">
-    <img src="http://via.placeholder.com/100x70" alt="300*70">
-    <img src="http://via.placeholder.com/100x150" alt="300*150">
-    <img src="http://via.placeholder.com/100x250" alt="300*250">
-    <img src="http://via.placeholder.com/100x80" alt="300*80">
-    <img src="http://via.placeholder.com/100x90" alt="300*90">
-    <img src="http://via.placeholder.com/100x120" alt="300*120">
-    <img src="http://via.placeholder.com/100x210" alt="300*210">
-    <img src="http://via.placeholder.com/100x230" alt="300*230">
-    <img src="http://via.placeholder.com/100x100" alt="300*100">
-    <img src="http://via.placeholder.com/100x70" alt="300*70">
-    <img src="http://via.placeholder.com/100x150" alt="300*150">
-    <img src="http://via.placeholder.com/100x250" alt="300*250">
-    <img src="http://via.placeholder.com/100x80" alt="300*80">
-    <img src="http://via.placeholder.com/100x90" alt="300*90">
-    <img src="http://via.placeholder.com/100x120" alt="300*120">
-    <img src="http://via.placeholder.com/100x210" alt="300*210">
-    <img src="http://via.placeholder.com/100x230" alt="300*230">
-
+    <img src="http://via.placeholder.com/100x100/3892FC/000000" alt="300*100">
+    <img src="http://via.placeholder.com/100x70/3B9CDB/000000" alt="300*70">
+    <img src="http://via.placeholder.com/100x150/F4281B/000000" alt="300*150">
+    <img src="http://via.placeholder.com/100x250/FF7F00/000000" alt="300*250">
+    <img src="http://via.placeholder.com/100x80/996633/000000" alt="300*80">
+    <img src="http://via.placeholder.com/100x90/00FF00/000000" alt="300*90">
+    <img src="http://via.placeholder.com/100x120/0000FF/000000" alt="300*120">
+    <img src="http://via.placeholder.com/100x210/996633/000000" alt="300*210">
+    <img src="http://via.placeholder.com/100x230/7F007F/000000" alt="300*230">
+    <img src="http://via.placeholder.com/100x100/74661E/000000" alt="300*100">
+    <img src="http://via.placeholder.com/100x70/746683/000000" alt="300*70">
+    <img src="http://via.placeholder.com/100x150/C16663/000000" alt="300*150">
+    <img src="http://via.placeholder.com/100x250/C166F6/000000" alt="300*250">
+    <img src="http://via.placeholder.com/100x80/4566F6/000000" alt="300*80">
+    <img src="http://via.placeholder.com/100x90/45F8F6/000000" alt="300*90">
+    <img src="http://via.placeholder.com/100x120/45F87C/000000" alt="300*120">
+    <img src="http://via.placeholder.com/100x210/BB0E3F/000000" alt="300*210">
+    <img src="http://via.placeholder.com/100x230/FFE700/000000" alt="300*230">
+    <img src="http://via.placeholder.com/100x100/74661E/000000" alt="300*100">
+    <img src="http://via.placeholder.com/100x70/746683/000000" alt="300*70">
+    <img src="http://via.placeholder.com/100x150/C16663/000000" alt="300*150">
+    <img src="http://via.placeholder.com/100x250/C166F6/000000" alt="300*250">
+    <img src="http://via.placeholder.com/100x80/4566F6/000000" alt="300*80">
+    <img src="http://via.placeholder.com/100x90/45F8F6/000000" alt="300*90">
+    <img src="http://via.placeholder.com/100x120/45F87C/000000" alt="300*120">
+    <img src="http://via.placeholder.com/100x210/BB0E3F/000000" alt="300*210">
+    <img src="http://via.placeholder.com/100x230/FFE700/000000" alt="300*230">
   </div>
 
   <script>
-    //     var waterfall = {
-    //       init: function(){
-
-    //         this.colHeightArray = []
-    //         this.imgWidth = $('.waterfall img').outerWidth(true)
-    //         this.colCount =  Math.floor($('.waterfall').width()/this.imgWidth)
-    //         for(var i=0; i<this.colCount; i++){
-    //           this.colHeightArray[i] = 0
-    //         }
-    //         this.bind()
-    //       },
-    //       bind: function(){
-    //         var _this = this
-    //         $('.waterfall img').on('load', function(){
-    //           _this.layout($(this))
-    //         })
-    //         $(window).on('resize', function(){
-    //           $('.waterfall img').each(function(){
-    //             _this.layout($(this))
-    //           })
-    //         })
-    //       },
-    //       layout: function($node){
-    //         console.log(this)
-    //         var minValue = this.colHeightArray[0] //0
-    //         var minIndex = 0   //0
-    // console.log(minValue, minIndex)
-
-    //         for(var i=0; i<this.colCount; i++){
-    //           if(this.colHeightArray[i]<minValue){
-    //             minValue = this.colHeightArray[i]
-    //             minIndex = i
-    //           }
-    //         }
-    //         console.log(minValue, minIndex)
-    //         $node.css({
-    //           left: minIndex * this.imgWidth,
-    //           top: minValue
-    //         })
-    //         this.colHeightArray[minIndex] += $node.outerHeight(true)
-    //       }
-
-    //     }
-    //     waterfall.init()
-
+  
 
     var colCount //列数
     var colHeightArray = [] //列的高度
